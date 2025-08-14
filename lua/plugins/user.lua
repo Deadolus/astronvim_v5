@@ -11,6 +11,7 @@ return {
 
   "andweeb/presence.nvim",
   "kkoomen/vim-doge",
+  "bkad/CamelCaseMotion",
   {
     "ray-x/lsp_signature.nvim",
     event = "BufRead",
