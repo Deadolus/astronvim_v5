@@ -88,11 +88,18 @@ return {
     end,
   },
   {
-    'smoka7/hop.nvim',
+    "smoka7/hop.nvim",
     version = "*",
     opts = {
-      keys = 'etovxqpdygfblzhckisuran'
-    }
+      keys = "etovxqpdygfblzhckisuran",
+    },
   },
-
+  {
+    "olimorris/codecompanion.nvim",
+    opts = {},
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      "nvim-treesitter/nvim-treesitter",
+    },
+  },
 }
