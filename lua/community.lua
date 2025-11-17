@@ -8,7 +8,8 @@
 return {
   "AstroNvim/astrocommunity",
   { import = "astrocommunity.pack.lua" },
-  { import = "astrocommunity.fuzzy-finder.telescope-zoxide" },
+  --{ import = "astrocommunity.fuzzy-finder.telescope-zoxide" },
   { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },
   -- import/override with your plugins folder
+  --{ import = "astrocommunity.recipes.vscode-icons" },
 }

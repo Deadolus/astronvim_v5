@@ -13,7 +13,7 @@ return {
         n = {
           -- second key is the lefthand side of the map
           -- mappings seen under group name "Buffer"
-          ["<leader>bn"] = { "<cmd>tabnew<cr>", desc = "New tab" },
+          --["<leader>bn"] = { "<cmd>tabnew<cr>", desc = "New tab" },
           ["<leader>bD"] = {
             function()
               require("astronvim.utils.status").heirline.buffer_picker(function(bufnr) require("astronvim.utils.buffer").close(bufnr) end)
@@ -27,12 +27,12 @@ return {
           -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
           --['<leader>?'] = {require('plugins.configs.telescope').oldfiles, desc = '[?] Find recently opened files' },
           ['<leader><space>'] = { function() require('telescope.builtin').buffers() end, desc = 'Find existing buffers'},
-          ['<leader>fM'] = { function() require('telescope.builtin').marks() end, desc = 'Find existing marks'},
-          ['<leader>fg'] = { function() require('telescope.builtin').live_grep() end, desc = 'Find existing marks'},
-          ['<leader>fb'] = { function() require('telescope.builtin').current_buffer_fuzzy_find() end, desc = 'Fuzzy find in current file'},
-          ['<leader>fB'] = { function() require('telescope.builtin').buffers() end, desc = 'Find buffers'},
-          ['<leader>fT'] = { function() require('telescope.builtin').tags() end, desc = 'Find tags'},
-          ['<leader>fl'] = { function() require('telescope.builtin').resume() end, desc = 'Resume last search'},
+          --['<leader>fM'] = { function() require('telescope.builtin').marks() end, desc = 'Find existing marks'},
+          --['<leader>fg'] = { function() require('telescope.builtin').live_grep() end, desc = 'Find existing marks'},
+          --['<leader>fb'] = { function() require('telescope.builtin').current_buffer_fuzzy_find() end, desc = 'Fuzzy find in current file'},
+          --['<leader>fB'] = { function() require('telescope.builtin').buffers() end, desc = 'Find buffers'},
+          --['<leader>fT'] = { function() require('telescope.builtin').tags() end, desc = 'Find tags'},
+          --['<leader>fl'] = { function() require('telescope.builtin').resume() end, desc = 'Resume last search'},
           ["gt"] = { function() vim.cmd.tabnext() end, desc = "Next tab" },
           ["gT"] = { function() vim.cmd.tabprevious() end, desc = "Previous tab" },
           ["<leader>tn"] = { "<cmd>tabnew<cr>", desc = "New Tab" },
@@ -62,6 +62,7 @@ return {
           ["<leader>ag"] = { ":Ag ", desc = "Start silversearcher"},
           ["<leader>fA"] = { ":Ag <c-r><c-w><CR>", desc = "Search current word with silversearcher"},
           ["<leader>lq"] = {":lua vim.diagnostic.setqflist()<CR>", desc = "Fill quickfix list with diagnostic"},
+          ["<leader>uL"] = {":set list!<CR>", desc = "Toggle display of whitespace (list) characters"},
           ["<C-ö>"] = { "<cmd>ToggleTerm direction=float<cr>", desc = "Toggle terminal" },
           ["<leader><leader>t"] = { "<cmd>ToggleTerm direction=float<cr>", desc = "Toggle terminal" },
           ["<leader>dl"] = { ":Dispatch<Up><cr><cr>", desc = "Last dispatch command" },
